@@ -86,7 +86,7 @@ export const MainPage = () => {
 	return (
 		<Layout>
 			<Hero heroImg={HERO_IMG} />
-            <Bestsellers products={products} />
+			<Bestsellers products={products} />
 		</Layout>
 	);
 };

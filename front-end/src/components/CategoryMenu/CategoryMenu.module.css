@@ -13,9 +13,9 @@
 }
 
 .categoryMenu ul li a {
-    color: var(--color-white);
+	color: var(--color-white);
 }
 
 .categoryMenu ul li a:active(.global) {
-    text-decoration: underline;
+	text-decoration: underline;
 }

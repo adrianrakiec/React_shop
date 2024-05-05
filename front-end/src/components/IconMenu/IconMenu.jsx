@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 export const IconMenu = () => {
 	const cartItems = 1;
-    
-    return (
+
+	return (
 		<ul className={styles.iconMenu}>
 			<li>
 				<Link to='/ulubione'>
@@ -16,7 +16,7 @@ export const IconMenu = () => {
 			<li>
 				<Link to='/koszyk'>
 					<img src={BAG_ICON} />
-                    <div className={styles.numberOfProducts}>{cartItems}</div>
+					<div className={styles.numberOfProducts}>{cartItems}</div>
 				</Link>
 			</li>
 		</ul>
