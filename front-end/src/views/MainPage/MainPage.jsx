@@ -1,7 +1,7 @@
 import { Layout } from '../../components/Layout/Layout';
 import { Hero } from '../../components/Hero/Hero';
 import HERO_IMG from '../../assets/hero-img.jpg';
-import { Bestsellers } from '../../components/Bestsellers/Bestsellers';
+import { Products } from '../../components/Products/Products';
 
 const products = [
 	{
@@ -86,7 +86,7 @@ export const MainPage = () => {
 	return (
 		<Layout>
 			<Hero heroImg={HERO_IMG} />
-			<Bestsellers products={products} />
+			<Products products={products} headerText='Sprawdź nasze bestsellery' />
 		</Layout>
 	);
 };
