@@ -5,9 +5,9 @@ export const Product = ({ product }) => {
 	return (
 		<Link className={styles.product}>
 			<img src={product.photos[0]} alt={product.productName} />
-            <h3>{product.productName}</h3>
+			<h3>{product.productName}</h3>
 			<p>{product.pricePLN}zł</p>
-            <div className={styles.heart}></div>
+			<div className={styles.heart}></div>
 		</Link>
 	);
 };
