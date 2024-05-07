@@ -3,12 +3,12 @@ import './styles/global.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Cart } from './views/Cart/Cart.jsx';
+import { ProductDetails } from './views/ProductDetails/ProductDetails';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <Cart />,
+		element: <ProductDetails />,
 	},
 ]);
 
