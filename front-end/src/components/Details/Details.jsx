@@ -1,10 +1,14 @@
 import styles from './Details.module.css';
+import { useContext } from 'react';
+import { CartContext } from '../../contexts/CartContext';
 import CAR_ICON from '../../assets/car.svg';
 import RETURN_ICON from '../../assets/return.svg';
 import { Button } from '../Button/Button';
 import { Accordion } from '../Accordion/Accordion';
 
 export function Details({ product }) {
+	const [, addProductToCart] = useContext(CartContext.CartContext);
+
 	const accordionContent = [
 		{
 			title: 'Opis produktu',
@@ -22,7 +26,14 @@ export function Details({ product }) {
 			<p className={styles.productName}>{product.productName}</p>
 			<p className={styles.price}>{product.pricePLN}zł</p>
 
-			<Button isBlack={true}>Dodaj do koszyka</Button>
+			<Button
+				isBlack={true}
+				onClick={() => {
+					addProductToCart(product);
+				}}
+			>
+				Dodaj do koszyka
+			</Button>
 
 			<ul className={styles.extraInfo}>
 				<li>

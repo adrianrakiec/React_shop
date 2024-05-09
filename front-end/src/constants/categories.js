@@ -83,3 +83,15 @@ export const CATEGORIES = [
         ],
     },
 ];
+
+export const PATH_TO_GENDER_NAME = {
+    kobieta: "Kobieta",
+    mezczyzna: "Mężczyzna",
+    dziecko: "Dziecko",
+};
+
+export const ENDPOINT_TO_PATH_MAPPING = {
+    men: "mezczyzna",
+    women: "kobieta",
+    children: "dziecko",
+};
