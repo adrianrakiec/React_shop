@@ -2,15 +2,17 @@ import { FavouriteProduct } from '../FavouriteProduct/FavouriteProduct';
 import { Wrapper } from '../Wrapper/Wrapper';
 import styles from './FavouritesList.module.css';
 
-export const FavouritesList = ({ products }) => {
+export const FavouritesList = ({ favourites }) => {
 	return (
 		<Wrapper>
 			<div className={styles.favouritesList}>
 				<h2>Ulubione</h2>
 				<div>
-					{products.map(product => (
-						<FavouriteProduct key={product.id} product={product} />
-					))}
+					{favourites.map(favourite => {
+						return (
+							<FavouriteProduct key={favourite.id} favourite={favourite} />
+						);
+					})}
 				</div>
 			</div>
 		</Wrapper>
