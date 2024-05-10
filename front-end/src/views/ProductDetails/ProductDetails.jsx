@@ -7,7 +7,7 @@ import { useLoaderData } from 'react-router-dom';
 
 export function ProductDetails() {
 	const product = useLoaderData();
-	
+
 	return (
 		<FlexContainer>
 			<ExpandableMenu />
